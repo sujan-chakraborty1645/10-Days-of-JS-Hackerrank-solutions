@@ -1,0 +1,4 @@
+function modifyArray(nums) {
+    let modifynums=nums.map((num)=>(num%2===0)?num*2:num*3);
+    return modifynums;
+}
