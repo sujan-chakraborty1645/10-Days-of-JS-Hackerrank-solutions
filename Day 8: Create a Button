@@ -1,0 +1,26 @@
+//in html file
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button</title>
+        <link rel="stylesheet" href="css/button.css" type="text/css">
+    </head>
+    <body>
+        
+        <Button type="button" onclick="increment()" id="btn" style="width:96px;height:48px;font-size:24px"  >0</Button>
+        
+        <script>
+           var buttonTarget = document.getElementById("btn");
+            var counter = 1;
+
+function increment(){
+
+  buttonTarget.innerHTML  = counter.toString();
+  counter++;
+  return counter;
+}
+        </script>
+    
+    </body>
+</html>
